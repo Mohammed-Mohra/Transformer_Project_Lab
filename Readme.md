@@ -10,7 +10,10 @@ Once the model is trained, it can be used for text generation: Given a starting 
 # How It Works
 - # Preporcess the data
     We start by looping over text files in the Aristotle directory, tokenize the text then change it to vectors
-    You should run Preprocess_the_data.py first. It will generate Xdata_npy.npy and Ydata_npy.npy array
+    You should run Preprocess_the_data.py first. The file will create Xdata_npy.npy and Ydata_npy.npy.
+    Xdata_npy.npy: is the processed text with sequence length = 50. The data will be imported in a numpy array.
+  
+    Ydata_npy.npy: is the processed output text. The data will be imported in a numpy array
    
 - # Embedding the data and training the model
    Make sure to download from [word2vec-google-news-300.model](https://huggingface.co/fse/word2vec-google-news-300) so you can embedd your tensors.
@@ -20,12 +23,5 @@ Once the model is trained, it can be used for text generation: Given a starting 
     My resutls looked something like this. I used MSELoss but your free to change in your code to any other loss function 
     ![Result](MSELoss.png)
 
-Preprocess_the_data.py:  The first file you should run. Please change the directory to loop over Aristotle directory. The file will create Xdata_npy.npy and Ydata_npy.npy
-  Xdata_npy.npy: is the preprocessed text with sequence length = 50. The data will be imported in a numpy array
-  so we need to change the type to tensor after importing 
-  
-  Ydata_npy.npy: is the preprocessed output text. The data will be imported in a numpy array
-  so we need to change the type to tensor after importing 
 
 
-Transformers from scratch.py: Please run this file after running "Preprocess_the_data.py". It trains the data after it has been preprocessed.
