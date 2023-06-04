@@ -18,7 +18,7 @@ Once the model is trained, it can be used for text generation: Given a starting 
  
  - # Results
     My resutls looked something like this. I used MSELoss but your free to change in your code to any other loss function 
-    (MSELoss.png.jpg)
+    ![Result](MSELoss.png.jpg)
 
 Preprocess_the_data.py:  The first file you should run. Please change the directory to loop over Aristotle directory. The file will create Xdata_npy.npy and Ydata_npy.npy
   Xdata_npy.npy: is the preprocessed text with sequence length = 50. The data will be imported in a numpy array
