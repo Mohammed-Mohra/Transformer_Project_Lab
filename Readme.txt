@@ -1,5 +1,11 @@
 Hey there!
 
+<a name="desc"></a>
+## 1. Description
+
+sometext
+
+<a name="usage"></a>
 word2vec-google-news-300.model.vectors: is an embedding matrix to embedd the tokens into 300 dimensional vectors
 
 Aristotle: is a folder that contains all the raw text used to feed the transformer
