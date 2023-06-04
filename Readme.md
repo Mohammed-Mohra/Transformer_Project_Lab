@@ -7,6 +7,10 @@ In this project, a statistical model is trained on a large corpus of text, every
 sequences and learns to predict the next word(s) in the sequence. The training data consists of pairs of input sequences and their corresponding target sequences, where the target is the next word or words.
 Once the model is trained, it can be used for text generation: Given a starting sequence, the language model can generate coherent and contextually relevant text by predicting the most likely subsequent words.
 
+# How It Works
+- # Preporcess the data
+- Second item
+- Third item
 
 word2vec-google-news-300.model.vectors: is an embedding matrix to embedd the tokens into 300 dimensional vectors
 
