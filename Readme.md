@@ -15,7 +15,10 @@ Once the model is trained, it can be used for text generation: Given a starting 
 - # Embedding the data and training the model
    Make sure to download from [word2vec-google-news-300.model](https://huggingface.co/fse/word2vec-google-news-300) so you can embedd your tensors.
    After you processed the data. you should run the "Transformers from scratch.py" train the model and get yourself some nice charts for the loss function.  
-   
+ 
+ - # Results
+    My resutls looked something like this. I used MSELoss but your free to change in your code to any other loss function 
+    (MSELoss.png.jpg)
 
 Preprocess_the_data.py:  The first file you should run. Please change the directory to loop over Aristotle directory. The file will create Xdata_npy.npy and Ydata_npy.npy
   Xdata_npy.npy: is the preprocessed text with sequence length = 50. The data will be imported in a numpy array
