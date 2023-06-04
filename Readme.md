@@ -9,12 +9,13 @@ Once the model is trained, it can be used for text generation: Given a starting 
 
 # How It Works
 - # Preporcess the data
-- Second item
-- Third item
-
-word2vec-google-news-300.model.vectors: is an embedding matrix to embedd the tokens into 300 dimensional vectors
-
-Aristotle: is a folder that contains all the raw text used to feed the transformer
+    We start by looping over text files in the Aristotle directory, tokenize the text then change it to vectors
+    You should run Preprocess_the_data.py first. It will generate Xdata_npy.npy and Ydata_npy.npy array
+   
+- # Embedding the data and training the model
+   Make sure to download from [word2vec-google-news-300.model](https://huggingface.co/fse/word2vec-google-news-300) so you can embedd your tensors.
+   After you processed the data. you should run the "Transformers from scratch.py" train the model and get yourself some nice charts for the loss function.  
+   
 
 Preprocess_the_data.py:  The first file you should run. Please change the directory to loop over Aristotle directory. The file will create Xdata_npy.npy and Ydata_npy.npy
   Xdata_npy.npy: is the preprocessed text with sequence length = 50. The data will be imported in a numpy array
