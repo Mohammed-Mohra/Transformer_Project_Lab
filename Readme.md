@@ -1,5 +1,11 @@
-##Heading
-Hey there!
+
+# Hey there!
+
+# Introduction 
+The goal of this project is to capture the patterns and structure of language, enabling a system to generate coherent and contextually appropriate text.
+In this project, a statistical model is trained on a large corpus of text, everything Aristotle wrote which amounts to 500 thousand tokens, to learn the relationships between words and the likelihood of different word sequences occurring. My project is trained using supervised learning techniques, where the model is fed with input
+sequences and learns to predict the next word(s) in the sequence. The training data consists of pairs of input sequences and their corresponding target sequences, where the target is the next word or words.
+Once the model is trained, it can be used for text generation: Given a starting sequence, the language model can generate coherent and contextually relevant text by predicting the most likely subsequent words.
 
 
 word2vec-google-news-300.model.vectors: is an embedding matrix to embedd the tokens into 300 dimensional vectors
